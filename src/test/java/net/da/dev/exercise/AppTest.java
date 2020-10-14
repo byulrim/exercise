@@ -1,20 +1,20 @@
 package net.da.dev.exercise;
 
-import static org.junit.Assert.assertTrue;
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
 
-import org.junit.Test;
+public class AppTest extends TestCase {
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
+	public AppTest(String testName) {
+		super(testName);
+	}
+
+	public static Test suite() {
+		return new TestSuite(AppTest.class);
+	}
+
+	public void testApp() {
+		assertTrue(true);
+	}
 }
