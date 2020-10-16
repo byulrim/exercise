@@ -27,7 +27,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>net.da.dev.exercise_lib</groupId>
+      <groupId>net.da.dev</groupId>
       <artifactId>exercise-lib</artifactId>
       <version>1.0</version>
     </dependency>
