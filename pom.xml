@@ -17,17 +17,25 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
+  <repositories>
+    <repository>
+      <id>spring.org</id>
+      <name>spring foundation repository</name>
+      <url>https://repo.spring.io/release/</url>
+    </repository>	    
+  </repositories>
+
   <dependencies>
+    <dependency>
+      <groupId>net.da.dev.exercise_lib</groupId>
+      <artifactId>exercise-lib</artifactId>
+      <version>1.0</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.sonarsource.scanner.maven</groupId>
-      <artifactId>sonar-maven-plugin</artifactId>
-      <version>3.7.0.1746</version>
     </dependency>
   </dependencies>
 
@@ -88,6 +96,11 @@
 	  <configuration>
 	    <mainClass>net.da.dev.exercise.App</mainClass>	
 	  </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.sonarsource.scanner.maven</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>3.7.0.1746</version>
         </plugin>
       </plugins>
     </pluginManagement>
